@@ -1,0 +1,28 @@
+.add-option-error {
+  color: $off-white;
+  font-style: italic;
+  padding: 0 $m-size;
+  margin: $m-size 0 0 0;
+}
+.add-option {
+  display: flex;
+  padding: $m-size;
+}
+.add-option__input {
+  background-color: $light-maroon;
+  border: none;
+  margin-right: $s-size;
+  color: $off-white;
+  font-size: larger;
+  flex-grow: 1;
+  border-bottom: 0.3rem solid darken($light-maroon, 10%);
+  padding: $s-size;
+}
+@media (max-width: $desktop-breakpoint) {
+  .add-option {
+    flex-direction: column;
+  }
+  .add-option__input {
+    margin: $s-size 0 $s-size 0;
+  }
+}
